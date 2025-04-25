@@ -1,0 +1,15 @@
+[submodule "a3/parsl-docking-tutorial"]
+	path = a3/parsl-docking-tutorial
+	url = https://github.com/ValHayot/parsl-docking-tutorial
+[submodule "a4/psij-python"]
+	path = a4/psij-python
+	url = git@github.com:ValHayot/psij-python.git
+[submodule "a5/hpcbadge"]
+	path = a5/hpcbadge
+	url = git@github.com:ValHayot/hpcbadge.git
+[submodule "a5/reprobadge"]
+	path = a5/reprobadge
+	url = git@github.com:ValHayot/hpcbadge.git
+[submodule "a2/globus-compute-github-action"]
+	path = a2/globus-compute-github-action
+	url = git@github.com:ValHayot/globus-compute-github-action.git
