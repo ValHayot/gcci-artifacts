@@ -1,0 +1,46 @@
+networks:
+  shared-net:
+    driver: bridge
+services:
+  parsldock:
+    build:
+      dockerfile: Dockerfile
+    image: pd:latest
+    platform: linux/amd64
+    env_file:
+      - .env
+    networks:
+      - shared-net
+    command: bash -c "source activate parsldockenv && globus-compute-endpoint list && globus-compute-endpoint start mep-ci"
+    deploy:
+      resources:
+        limits:
+          memory: 24g
+  psij:
+    build:
+      dockerfile: Dockerfile-a4
+    image: psi:latest
+    platform: linux/amd64
+    env_file:
+      - .env
+    networks:
+      - shared-net
+    command: bash -c "source activate psij && globus-compute-endpoint list && globus-compute-endpoint start mep-ci"
+    deploy:
+      resources:
+        limits:
+          memory: 24g
+  kamping:
+    build:
+      dockerfile: Dockerfile-a5
+    image: kamping:latest
+    platform: linux/amd64
+    env_file:
+      - .env
+    networks:
+      - shared-net
+    command: bash -c "globus-compute-endpoint list && globus-compute-endpoint start mep-ci"
+    deploy:
+      resources:
+        limits:
+          memory: 24g

@@ -1,0 +1,31 @@
+FROM continuumio/anaconda3:latest
+RUN apt update -y && apt-get install wget build-essential git vim -y
+
+RUN adduser --disabled-password --gecos "Default user" --uid 1000 cc
+
+RUN mkdir /opt/conda/pkgs && \
+    chgrp cc /opt/conda/pkgs && \
+    chmod g+w -R /opt/conda /opt/conda/pkgs && \
+    touch /opt/conda/pkgs/urls.txt && \
+    chown cc  -R /opt/conda /opt/conda/pkgs/urls.txt
+
+USER cc
+
+RUN conda install -c anaconda jupyter nb_conda_kernels -y
+
+RUN git clone https://github.com/ValHayot/psij-python.git /home/cc/psij
+
+WORKDIR /home/cc/psij
+RUN conda create -n psij python=3.12.0
+
+SHELL ["conda", "run", "--no-capture-output", "-n", "psij", "/bin/bash", "-c"]
+
+
+RUN pip install -e . && pip install pytest globus-compute-endpoint==3.5.0
+
+RUN mkdir -p /home/cc/pd_cache && cd /home/cc/pd_cache && pip download /home/cc/psij \
+    && pip download pytest pandas==2.2.0 globus-compute-endpoint==3.5.0
+
+RUN globus-compute-endpoint configure --multi-user mep-ci
+
+COPY ../a3/chameleon_user_config_template.yaml.j2 /home/cc/.globus_compute/mep-ci/user_config_template.yaml.j2
