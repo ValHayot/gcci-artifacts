@@ -1,0 +1,94 @@
+Looking in links: /scratch/user/u.vh86741/pd_cache
+Processing /scratch/user/u.vh86741/gc-action-temp/parsl-docking-tutorial
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: pytest in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (8.3.5)
+Requirement already satisfied: matplotlib in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from ParslDock==1.0.0) (3.10.1)
+Requirement already satisfied: pandas in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from ParslDock==1.0.0) (2.2.3)
+Requirement already satisfied: parsl in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from ParslDock==1.0.0) (2025.3.17)
+Requirement already satisfied: rdkit in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from ParslDock==1.0.0) (2024.9.6)
+Requirement already satisfied: scikit-learn in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from ParslDock==1.0.0) (1.6.1)
+Requirement already satisfied: exceptiongroup>=1.0.0rc8 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from pytest) (1.2.2)
+Requirement already satisfied: iniconfig in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from pytest) (2.1.0)
+Requirement already satisfied: packaging in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from pytest) (24.2)
+Requirement already satisfied: pluggy<2,>=1.5 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from pytest) (1.5.0)
+Requirement already satisfied: tomli>=1 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from pytest) (2.2.1)
+Requirement already satisfied: contourpy>=1.0.1 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (4.57.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (1.4.8)
+Requirement already satisfied: numpy>=1.23 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (2.2.4)
+Requirement already satisfied: pillow>=8 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (11.2.1)
+Requirement already satisfied: pyparsing>=2.3.1 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (3.2.3)
+Requirement already satisfied: python-dateutil>=2.7 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from pandas->ParslDock==1.0.0) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from pandas->ParslDock==1.0.0) (2025.2)
+Requirement already satisfied: pyzmq>=17.1.2 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (26.1.0)
+Requirement already satisfied: typeguard!=3.*,<5,>=2.10 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (4.4.2)
+Requirement already satisfied: typing-extensions<5,>=4.6 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (4.13.2)
+Requirement already satisfied: globus-sdk in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (3.54.0)
+Requirement already satisfied: dill in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (0.3.5.1)
+Requirement already satisfied: tblib in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (1.7.0)
+Requirement already satisfied: requests in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (2.32.3)
+Requirement already satisfied: psutil>=5.5.1 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (5.9.8)
+Requirement already satisfied: setproctitle in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (1.3.5)
+Requirement already satisfied: filelock<4,>=3.13 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (3.18.0)
+Requirement already satisfied: scipy>=1.6.0 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from scikit-learn->ParslDock==1.0.0) (1.15.2)
+Requirement already satisfied: joblib>=1.2.0 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from scikit-learn->ParslDock==1.0.0) (1.4.2)
+Requirement already satisfied: threadpoolctl>=3.1.0 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from scikit-learn->ParslDock==1.0.0) (3.6.0)
+Requirement already satisfied: six>=1.5 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib->ParslDock==1.0.0) (1.17.0)
+Requirement already satisfied: pyjwt<3.0.0,>=2.0.0 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from pyjwt[crypto]<3.0.0,>=2.0.0->globus-sdk->parsl->ParslDock==1.0.0) (2.10.1)
+Requirement already satisfied: cryptography!=3.4.0,>=3.3.1 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from globus-sdk->parsl->ParslDock==1.0.0) (44.0.2)
+Requirement already satisfied: charset-normalizer<4,>=2 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from requests->parsl->ParslDock==1.0.0) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from requests->parsl->ParslDock==1.0.0) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from requests->parsl->ParslDock==1.0.0) (2.4.0)
+Requirement already satisfied: certifi>=2017.4.17 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from requests->parsl->ParslDock==1.0.0) (2025.1.31)
+Requirement already satisfied: cffi>=1.12 in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from cryptography!=3.4.0,>=3.3.1->globus-sdk->parsl->ParslDock==1.0.0) (1.17.1)
+Requirement already satisfied: pycparser in /scratch/user/u.vh86741/.conda/envs/parsldockenv/lib/python3.10/site-packages (from cffi>=1.12->cryptography!=3.4.0,>=3.3.1->globus-sdk->parsl->ParslDock==1.0.0) (2.22)
+Building wheels for collected packages: ParslDock
+  Building wheel for ParslDock (pyproject.toml): started
+  Building wheel for ParslDock (pyproject.toml): finished with status 'done'
+  Created wheel for ParslDock: filename=parsldock-1.0.0-py3-none-any.whl size=11381 sha256=0e875e2ede532d2dfdf31398b7ff76fe8de3ad6bf52b00ef5e2074f93041b24b
+  Stored in directory: /home/u.vh86741/.cache/pip/wheels/6b/a7/a0/39be4331a2abaebac4d40864ff16329361b69391c8402d2f61
+Successfully built ParslDock
+Installing collected packages: ParslDock
+  Attempting uninstall: ParslDock
+    Found existing installation: ParslDock 1.0.0
+    Uninstalling ParslDock-1.0.0:
+      Successfully uninstalled ParslDock-1.0.0
+Successfully installed ParslDock-1.0.0
+============================= test session starts ==============================
+platform linux -- Python 3.10.14, pytest-8.3.5, pluggy-1.5.0
+rootdir: /scratch/user/u.vh86741/gc-action-temp/parsl-docking-tutorial
+configfile: pyproject.toml
+plugins: typeguard-4.4.2
+collected 16 items
+
+tests/learn_test.py ....                                                 [ 25%]
+tests/parallel_test.py ......                                            [ 62%]
+tests/sequential_test.py .....                                           [ 93%]
+tests/workflow_test.py .                                                 [100%]
+
+============================== slowest durations ===============================
+48.29s call     tests/workflow_test.py::test_run
+19.28s call     tests/sequential_test.py::test_autodock_vina
+17.40s call     tests/parallel_test.py::test_parsl_autodock_vina
+7.05s call     tests/parallel_test.py::test_parsl_smi_to_pdb
+1.05s setup    tests/parallel_test.py::test_parsl_smi_to_pdb
+0.55s call     tests/parallel_test.py::test_parsl_set_element
+0.55s call     tests/sequential_test.py::test_set_element
+0.27s call     tests/parallel_test.py::test_parsl_pdb_to_pdbqt
+0.27s call     tests/sequential_test.py::test_smi_to_pdb
+0.26s call     tests/sequential_test.py::test_pdb_to_pdbqt
+0.14s call     tests/learn_test.py::test_trainmodel
+0.09s call     tests/learn_test.py::test_compute_morgan_fingerprints
+0.02s call     tests/learn_test.py::test_runmodel
+0.01s call     tests/parallel_test.py::test_parsl_make_autodock_config
+0.01s call     tests/parallel_test.py::test_cleanup
+
+(33 durations < 0.005s hidden.  Use -vv to show these durations.)
+======================== 16 passed in 96.31s (0:01:36) =========================
