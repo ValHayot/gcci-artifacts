@@ -74,21 +74,21 @@ tests/sequential_test.py .....                                           [ 93%]
 tests/workflow_test.py .                                                 [100%]
 
 ============================== slowest durations ===============================
-48.29s call     tests/workflow_test.py::test_run
-19.28s call     tests/sequential_test.py::test_autodock_vina
-17.40s call     tests/parallel_test.py::test_parsl_autodock_vina
-7.05s call     tests/parallel_test.py::test_parsl_smi_to_pdb
-1.05s setup    tests/parallel_test.py::test_parsl_smi_to_pdb
-0.55s call     tests/parallel_test.py::test_parsl_set_element
+34.09s call     tests/workflow_test.py::test_run
+22.57s call     tests/parallel_test.py::test_parsl_autodock_vina
+18.95s call     tests/sequential_test.py::test_autodock_vina
+7.01s call     tests/parallel_test.py::test_parsl_smi_to_pdb
+0.99s setup    tests/parallel_test.py::test_parsl_smi_to_pdb
+0.58s call     tests/parallel_test.py::test_parsl_set_element
 0.55s call     tests/sequential_test.py::test_set_element
 0.27s call     tests/parallel_test.py::test_parsl_pdb_to_pdbqt
-0.27s call     tests/sequential_test.py::test_smi_to_pdb
-0.26s call     tests/sequential_test.py::test_pdb_to_pdbqt
-0.14s call     tests/learn_test.py::test_trainmodel
+0.26s call     tests/sequential_test.py::test_smi_to_pdb
+0.24s call     tests/sequential_test.py::test_pdb_to_pdbqt
+0.13s call     tests/learn_test.py::test_trainmodel
 0.09s call     tests/learn_test.py::test_compute_morgan_fingerprints
 0.02s call     tests/learn_test.py::test_runmodel
-0.01s call     tests/parallel_test.py::test_parsl_make_autodock_config
+0.02s call     tests/parallel_test.py::test_parsl_make_autodock_config
 0.01s call     tests/parallel_test.py::test_cleanup
 
 (33 durations < 0.005s hidden.  Use -vv to show these durations.)
-======================== 16 passed in 96.31s (0:01:36) =========================
+======================== 16 passed in 86.94s (0:01:26) =========================

@@ -2,6 +2,29 @@ networks:
   shared-net:
     driver: bridge
 services:
+  figures:
+    build:
+      dockerfile: docker/Dockerfile-a1
+    image: cfigs:latest
+    platform: linux/amd64
+    env_file:
+      - .env
+    networks:
+      - shared-net
+    volumes:
+      - $PWD/a1:$PWD/a1
+    working_dir: $PWD
+    command: jupyter execute a1/a1_plots.ipynb
+  compute:
+    build:
+      dockerfile: docker/Dockerfile-a2
+    image: gc:latest
+    platform: linux/amd64
+    env_file:
+      - .env
+    networks:
+      - shared-net
+    command: bash -c "globus-compute-endpoint start correct-ep && sleep 10 && tail -f /root/.globus_compute/correct-ep/endpoint.log"
   parsldock:
     build:
       dockerfile: docker/Dockerfile-a3

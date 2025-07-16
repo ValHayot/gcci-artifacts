@@ -1,0 +1,4 @@
+FROM python:3.11
+
+RUN pip install globus-compute-endpoint==3.5.0
+RUN globus-compute-endpoint configure correct-ep

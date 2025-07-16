@@ -6,50 +6,49 @@ Processing /home/cc/gc-action-temp/parsl-docking-tutorial
   Getting requirements to build wheel: finished with status 'done'
   Preparing metadata (pyproject.toml): started
   Preparing metadata (pyproject.toml): finished with status 'done'
-Requirement already satisfied: pytest in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (8.4.1)
-Requirement already satisfied: matplotlib in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from ParslDock==1.0.0) (3.8.2)
-Requirement already satisfied: pandas in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from ParslDock==1.0.0) (2.2.0)
-Requirement already satisfied: parsl in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from ParslDock==1.0.0) (2025.3.17)
-Requirement already satisfied: rdkit in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from ParslDock==1.0.0) (2025.3.3)
-Requirement already satisfied: scikit-learn in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from ParslDock==1.0.0) (1.7.0)
-Requirement already satisfied: exceptiongroup>=1 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from pytest) (1.3.0)
-Requirement already satisfied: iniconfig>=1 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from pytest) (2.1.0)
-Requirement already satisfied: packaging>=20 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from pytest) (25.0)
-Requirement already satisfied: pluggy<2,>=1.5 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from pytest) (1.6.0)
-Requirement already satisfied: pygments>=2.7.2 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from pytest) (2.19.2)
-Requirement already satisfied: tomli>=1 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from pytest) (2.2.1)
-Requirement already satisfied: typing-extensions>=4.6.0 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from exceptiongroup>=1->pytest) (4.14.1)
-Requirement already satisfied: contourpy>=1.0.1 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (1.3.2)
-Requirement already satisfied: cycler>=0.10 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (0.12.1)
-Requirement already satisfied: fonttools>=4.22.0 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (4.58.5)
-Requirement already satisfied: kiwisolver>=1.3.1 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (1.4.8)
-Requirement already satisfied: numpy<2,>=1.21 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (1.26.4)
-Requirement already satisfied: pillow>=8 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (11.3.0)
-Requirement already satisfied: pyparsing>=2.3.1 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (3.2.3)
-Requirement already satisfied: python-dateutil>=2.7 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (2.9.0.post0)
-Requirement already satisfied: six>=1.5 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib->ParslDock==1.0.0) (1.17.0)
-Requirement already satisfied: pytz>=2020.1 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from pandas->ParslDock==1.0.0) (2025.2)
-Requirement already satisfied: tzdata>=2022.7 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from pandas->ParslDock==1.0.0) (2025.2)
-Requirement already satisfied: pyzmq>=17.1.2 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (26.1.0)
-Requirement already satisfied: typeguard!=3.*,<5,>=2.10 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (4.4.4)
-Requirement already satisfied: globus-sdk in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (3.60.0)
-Requirement already satisfied: dill in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (0.3.5.1)
-Requirement already satisfied: tblib in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (1.7.0)
-Requirement already satisfied: requests in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (2.32.4)
-Requirement already satisfied: psutil>=5.5.1 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (5.9.8)
-Requirement already satisfied: setproctitle in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (1.3.6)
-Requirement already satisfied: filelock<4,>=3.13 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (3.18.0)
-Requirement already satisfied: pyjwt<3.0.0,>=2.0.0 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from pyjwt[crypto]<3.0.0,>=2.0.0->globus-sdk->parsl->ParslDock==1.0.0) (2.10.1)
-Requirement already satisfied: cryptography!=3.4.0,>=3.3.1 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from globus-sdk->parsl->ParslDock==1.0.0) (45.0.5)
-Requirement already satisfied: charset_normalizer<4,>=2 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from requests->parsl->ParslDock==1.0.0) (3.4.2)
-Requirement already satisfied: idna<4,>=2.5 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from requests->parsl->ParslDock==1.0.0) (3.10)
-Requirement already satisfied: urllib3<3,>=1.21.1 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from requests->parsl->ParslDock==1.0.0) (2.5.0)
-Requirement already satisfied: certifi>=2017.4.17 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from requests->parsl->ParslDock==1.0.0) (2025.7.14)
-Requirement already satisfied: cffi>=1.14 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from cryptography!=3.4.0,>=3.3.1->globus-sdk->parsl->ParslDock==1.0.0) (1.17.1)
-Requirement already satisfied: pycparser in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from cffi>=1.14->cryptography!=3.4.0,>=3.3.1->globus-sdk->parsl->ParslDock==1.0.0) (2.22)
-Requirement already satisfied: scipy>=1.8.0 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from scikit-learn->ParslDock==1.0.0) (1.15.3)
-Requirement already satisfied: joblib>=1.2.0 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from scikit-learn->ParslDock==1.0.0) (1.5.1)
-Requirement already satisfied: threadpoolctl>=3.1.0 in /opt/conda/envs/parsldockenv/lib/python3.10/site-packages (from scikit-learn->ParslDock==1.0.0) (3.6.0)
+Requirement already satisfied: pytest in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (8.3.5)
+Requirement already satisfied: matplotlib in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from ParslDock==1.0.0) (3.10.1)
+Requirement already satisfied: pandas in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from ParslDock==1.0.0) (2.2.3)
+Requirement already satisfied: parsl in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from ParslDock==1.0.0) (2025.3.17)
+Requirement already satisfied: rdkit in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from ParslDock==1.0.0) (2024.9.6)
+Requirement already satisfied: scikit-learn in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from ParslDock==1.0.0) (1.6.1)
+Requirement already satisfied: exceptiongroup>=1.0.0rc8 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from pytest) (1.2.2)
+Requirement already satisfied: iniconfig in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from pytest) (2.1.0)
+Requirement already satisfied: packaging in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from pytest) (24.2)
+Requirement already satisfied: pluggy<2,>=1.5 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from pytest) (1.5.0)
+Requirement already satisfied: tomli>=1 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from pytest) (2.2.1)
+Requirement already satisfied: contourpy>=1.0.1 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (4.57.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (1.4.8)
+Requirement already satisfied: numpy>=1.23 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (2.2.4)
+Requirement already satisfied: pillow>=8 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (11.1.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (3.2.3)
+Requirement already satisfied: python-dateutil>=2.7 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from matplotlib->ParslDock==1.0.0) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from pandas->ParslDock==1.0.0) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from pandas->ParslDock==1.0.0) (2025.2)
+Requirement already satisfied: pyzmq>=17.1.2 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (26.1.0)
+Requirement already satisfied: typeguard!=3.*,<5,>=2.10 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (4.4.2)
+Requirement already satisfied: typing-extensions<5,>=4.6 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (4.13.2)
+Requirement already satisfied: globus-sdk in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (3.54.0)
+Requirement already satisfied: dill in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (0.3.5.1)
+Requirement already satisfied: tblib in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (1.7.0)
+Requirement already satisfied: requests in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (2.32.3)
+Requirement already satisfied: psutil>=5.5.1 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (5.9.8)
+Requirement already satisfied: setproctitle in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (1.3.5)
+Requirement already satisfied: filelock<4,>=3.13 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from parsl->ParslDock==1.0.0) (3.18.0)
+Requirement already satisfied: scipy>=1.6.0 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from scikit-learn->ParslDock==1.0.0) (1.15.2)
+Requirement already satisfied: joblib>=1.2.0 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from scikit-learn->ParslDock==1.0.0) (1.4.2)
+Requirement already satisfied: threadpoolctl>=3.1.0 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from scikit-learn->ParslDock==1.0.0) (3.6.0)
+Requirement already satisfied: six>=1.5 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib->ParslDock==1.0.0) (1.17.0)
+Requirement already satisfied: pyjwt<3.0.0,>=2.0.0 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from pyjwt[crypto]<3.0.0,>=2.0.0->globus-sdk->parsl->ParslDock==1.0.0) (2.10.1)
+Requirement already satisfied: cryptography!=3.4.0,>=3.3.1 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from globus-sdk->parsl->ParslDock==1.0.0) (44.0.2)
+Requirement already satisfied: charset-normalizer<4,>=2 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from requests->parsl->ParslDock==1.0.0) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from requests->parsl->ParslDock==1.0.0) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from requests->parsl->ParslDock==1.0.0) (2.4.0)
+Requirement already satisfied: certifi>=2017.4.17 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from requests->parsl->ParslDock==1.0.0) (2025.1.31)
+Requirement already satisfied: cffi>=1.12 in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from cryptography!=3.4.0,>=3.3.1->globus-sdk->parsl->ParslDock==1.0.0) (1.17.1)
+Requirement already satisfied: pycparser in /home/cc/miniconda3/envs/parsldockenv/lib/python3.10/site-packages (from cffi>=1.12->cryptography!=3.4.0,>=3.3.1->globus-sdk->parsl->ParslDock==1.0.0) (2.22)
 Building wheels for collected packages: ParslDock
   Building wheel for ParslDock (pyproject.toml): started
   Building wheel for ParslDock (pyproject.toml): finished with status 'done'
@@ -63,10 +62,10 @@ Installing collected packages: ParslDock
       Successfully uninstalled ParslDock-1.0.0
 Successfully installed ParslDock-1.0.0
 ============================= test session starts ==============================
-platform linux -- Python 3.10.14, pytest-8.4.1, pluggy-1.6.0
+platform linux -- Python 3.10.14, pytest-8.3.5, pluggy-1.5.0
 rootdir: /home/cc/gc-action-temp/parsl-docking-tutorial
 configfile: pyproject.toml
-plugins: typeguard-4.4.4, anyio-4.9.0
+plugins: typeguard-4.4.2
 collected 16 items
 
 tests/learn_test.py ....                                                 [ 25%]
@@ -74,34 +73,23 @@ tests/parallel_test.py ......                                            [ 62%]
 tests/sequential_test.py .....                                           [ 93%]
 tests/workflow_test.py .                                                 [100%]
 
-=============================== warnings summary ===============================
-tests/learn_test.py:3
-  /home/cc/gc-action-temp/parsl-docking-tutorial/tests/learn_test.py:3: DeprecationWarning: 
-  Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
-  (to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
-  but was not found to be installed on your system.
-  If this would cause problems for you,
-  please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
-          
-    import pandas
-
--- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
 ============================== slowest durations ===============================
-28.57s call     tests/workflow_test.py::test_run
-19.31s call     tests/sequential_test.py::test_autodock_vina
-16.68s call     tests/parallel_test.py::test_parsl_autodock_vina
-6.35s call     tests/parallel_test.py::test_parsl_smi_to_pdb
-0.70s setup    tests/parallel_test.py::test_parsl_smi_to_pdb
-0.35s call     tests/sequential_test.py::test_smi_to_pdb
-0.17s call     tests/parallel_test.py::test_parsl_set_element
-0.16s call     tests/parallel_test.py::test_parsl_pdb_to_pdbqt
-0.14s call     tests/sequential_test.py::test_pdb_to_pdbqt
-0.13s call     tests/sequential_test.py::test_set_element
+47.90s call     tests/workflow_test.py::test_run
+20.59s call     tests/parallel_test.py::test_parsl_autodock_vina
+17.55s call     tests/sequential_test.py::test_autodock_vina
+6.33s call     tests/parallel_test.py::test_parsl_smi_to_pdb
+0.65s setup    tests/parallel_test.py::test_parsl_smi_to_pdb
+0.36s call     tests/sequential_test.py::test_smi_to_pdb
+0.15s call     tests/parallel_test.py::test_parsl_pdb_to_pdbqt
+0.15s call     tests/parallel_test.py::test_parsl_set_element
+0.14s call     tests/sequential_test.py::test_set_element
+0.13s call     tests/sequential_test.py::test_pdb_to_pdbqt
+0.09s call     tests/learn_test.py::test_trainmodel
 0.08s call     tests/learn_test.py::test_compute_morgan_fingerprints
-0.06s call     tests/learn_test.py::test_trainmodel
 0.03s call     tests/learn_test.py::test_runmodel
-0.02s call     tests/parallel_test.py::test_parsl_make_autodock_config
 0.02s call     tests/parallel_test.py::test_cleanup
+0.02s call     tests/parallel_test.py::test_parsl_make_autodock_config
+0.01s teardown tests/workflow_test.py::test_run
 
-(33 durations < 0.005s hidden.  Use -vv to show these durations.)
-=================== 16 passed, 1 warning in 73.43s (0:01:13) ===================
+(32 durations < 0.005s hidden.  Use -vv to show these durations.)
+======================== 16 passed in 94.84s (0:01:34) =========================

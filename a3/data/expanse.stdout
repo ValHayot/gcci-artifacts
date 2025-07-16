@@ -74,22 +74,22 @@ tests/sequential_test.py .....                                           [ 93%]
 tests/workflow_test.py .                                                 [100%]
 
 ============================== slowest durations ===============================
-50.58s call     tests/workflow_test.py::test_run
-21.10s call     tests/parallel_test.py::test_parsl_autodock_vina
-18.81s call     tests/sequential_test.py::test_autodock_vina
-7.71s call     tests/sequential_test.py::test_smi_to_pdb
-6.69s call     tests/parallel_test.py::test_parsl_smi_to_pdb
-1.54s setup    tests/parallel_test.py::test_parsl_smi_to_pdb
-0.44s call     tests/parallel_test.py::test_parsl_pdb_to_pdbqt
-0.41s call     tests/parallel_test.py::test_parsl_set_element
+276.51s call     tests/workflow_test.py::test_run
+23.85s call     tests/sequential_test.py::test_autodock_vina
+22.25s call     tests/parallel_test.py::test_parsl_autodock_vina
+6.70s call     tests/parallel_test.py::test_parsl_smi_to_pdb
+1.03s setup    tests/parallel_test.py::test_parsl_smi_to_pdb
+0.44s call     tests/parallel_test.py::test_parsl_set_element
+0.42s call     tests/parallel_test.py::test_parsl_pdb_to_pdbqt
+0.25s call     tests/sequential_test.py::test_smi_to_pdb
+0.25s call     tests/learn_test.py::test_compute_morgan_fingerprints
 0.25s call     tests/sequential_test.py::test_set_element
-0.20s call     tests/sequential_test.py::test_pdb_to_pdbqt
-0.17s call     tests/learn_test.py::test_compute_morgan_fingerprints
-0.16s call     tests/learn_test.py::test_trainmodel
+0.18s call     tests/sequential_test.py::test_pdb_to_pdbqt
+0.14s call     tests/learn_test.py::test_trainmodel
 0.03s call     tests/learn_test.py::test_runmodel
 0.02s call     tests/parallel_test.py::test_parsl_make_autodock_config
-0.02s call     tests/sequential_test.py::test_vina_config
 0.01s call     tests/parallel_test.py::test_cleanup
+0.01s teardown tests/workflow_test.py::test_run
 
 (32 durations < 0.005s hidden.  Use -vv to show these durations.)
-======================== 16 passed in 124.73s (0:02:04) ========================
+======================== 16 passed in 334.51s (0:05:34) ========================
