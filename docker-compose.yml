@@ -4,7 +4,7 @@ networks:
 services:
   parsldock:
     build:
-      dockerfile: Dockerfile
+      dockerfile: docker/Dockerfile-a3
     image: pd:latest
     platform: linux/amd64
     env_file:
@@ -18,7 +18,7 @@ services:
           memory: 24g
   psij:
     build:
-      dockerfile: Dockerfile-a4
+      dockerfile: docker/Dockerfile-a4
     image: psi:latest
     platform: linux/amd64
     env_file:
@@ -32,7 +32,7 @@ services:
           memory: 24g
   kamping:
     build:
-      dockerfile: Dockerfile-a5
+      dockerfile: docker/Dockerfile-a5
     image: kamping:latest
     platform: linux/amd64
     env_file:
