@@ -10,6 +10,6 @@
 [submodule "a5/reprobadge"]
 	path = a5/reprobadge
 	url = git@github.com:ValHayot/hpcbadge.git
-[submodule "a2/globus-compute-github-action"]
-	path = a2/globus-compute-github-action
-	url = git@github.com:ValHayot/globus-compute-github-action.git
+[submodule "a2/correct"]
+	path = a2/correct
+	url = git@github.com:globus-labs/correct.git
