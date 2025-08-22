@@ -1,0 +1,2407 @@
+Requirement already satisfied: psutil<=7.0.0,>=5.9 in /opt/conda/envs/psij/lib/python3.12/site-packages (from -r /home/cc/gc-action-temp/psij-python/requirements.txt (line 1)) (5.9.8)
+Requirement already satisfied: pystache>=0.6.0 in /opt/conda/envs/psij/lib/python3.12/site-packages (from -r /home/cc/gc-action-temp/psij-python/requirements.txt (line 2)) (0.6.8)
+Requirement already satisfied: typeguard>=3.0.1 in /opt/conda/envs/psij/lib/python3.12/site-packages (from -r /home/cc/gc-action-temp/psij-python/requirements.txt (line 3)) (4.4.4)
+Requirement already satisfied: packaging<=24.2,>=24.0 in /opt/conda/envs/psij/lib/python3.12/site-packages (from -r /home/cc/gc-action-temp/psij-python/requirements.txt (line 4)) (24.2)
+Collecting radical.utils (from -r /home/cc/gc-action-temp/psij-python/requirements-connector-radical.txt (line 1))
+  Downloading radical_utils-1.102.0.tar.gz (172 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting radical.pilot (from -r /home/cc/gc-action-temp/psij-python/requirements-connector-radical.txt (line 2))
+  Downloading radical_pilot-1.102.0.tar.gz (633 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 633.5/633.5 kB 19.4 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting six (from -r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 9))
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting Sphinx==4.5.0 (from -r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 10))
+  Downloading Sphinx-4.5.0-py3-none-any.whl.metadata (7.9 kB)
+Collecting sphinx_rtd_theme (from -r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 11))
+  Downloading sphinx_rtd_theme-3.0.2-py2.py3-none-any.whl.metadata (4.4 kB)
+Collecting sphinx-tabs==3.2.0 (from -r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 12))
+  Downloading sphinx_tabs-3.2.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting sphinx-multiversion (from -r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 13))
+  Downloading sphinx_multiversion-0.2.4-py3-none-any.whl.metadata (968 bytes)
+Collecting sphinxcontrib-applehelp==1.0.4 (from -r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 18))
+  Downloading sphinxcontrib_applehelp-1.0.4-py3-none-any.whl.metadata (2.7 kB)
+Collecting sphinxcontrib-devhelp==1.0.2 (from -r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 19))
+  Downloading sphinxcontrib_devhelp-1.0.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting sphinxcontrib-htmlhelp==2.0.1 (from -r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 20))
+  Downloading sphinxcontrib_htmlhelp-2.0.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting sphinxcontrib-serializinghtml==1.1.5 (from -r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 21))
+  Downloading sphinxcontrib_serializinghtml-1.1.5-py2.py3-none-any.whl.metadata (1.5 kB)
+Collecting sphinxcontrib-qthelp==1.0.3 (from -r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 22))
+  Downloading sphinxcontrib_qthelp-1.0.3-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting cloud_sptheme==1.10.1.post20200504175005 (from -r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 25))
+  Downloading cloud_sptheme-1.10.1.post20200504175005-py2.py3-none-any.whl.metadata (1.5 kB)
+Requirement already satisfied: pytest>=6.2.0 in /opt/conda/envs/psij/lib/python3.12/site-packages (from -r /home/cc/gc-action-temp/psij-python/requirements-tests.txt (line 6)) (8.4.1)
+Requirement already satisfied: requests>=2.25.1 in /opt/conda/envs/psij/lib/python3.12/site-packages (from -r /home/cc/gc-action-temp/psij-python/requirements-tests.txt (line 7)) (2.32.4)
+Collecting pytest-cov (from -r /home/cc/gc-action-temp/psij-python/requirements-tests.txt (line 8))
+  Downloading pytest_cov-6.2.1-py3-none-any.whl.metadata (30 kB)
+Collecting pytest-timeout (from -r /home/cc/gc-action-temp/psij-python/requirements-tests.txt (line 9))
+  Downloading pytest_timeout-2.4.0-py3-none-any.whl.metadata (20 kB)
+Collecting filelock<3.18,>=3.4 (from -r /home/cc/gc-action-temp/psij-python/requirements-tests.txt (line 10))
+  Downloading filelock-3.17.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting mypy>=0.931 (from -r requirements-dev.txt (line 9))
+  Downloading mypy-1.17.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.2 kB)
+Collecting flake8 (from -r requirements-dev.txt (line 10))
+  Downloading flake8-7.3.0-py2.py3-none-any.whl.metadata (3.8 kB)
+Collecting flake8-docstrings (from -r requirements-dev.txt (line 11))
+  Downloading flake8_docstrings-1.7.0-py2.py3-none-any.whl.metadata (2.0 kB)
+Collecting autopep8 (from -r requirements-dev.txt (line 12))
+  Downloading autopep8-2.3.2-py2.py3-none-any.whl.metadata (16 kB)
+Collecting types-requests (from -r requirements-dev.txt (line 13))
+  Downloading types_requests-2.32.4.20250611-py3-none-any.whl.metadata (2.1 kB)
+Collecting sphinxcontrib-jsmath (from Sphinx==4.5.0->-r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 10))
+  Downloading sphinxcontrib_jsmath-1.0.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Requirement already satisfied: Jinja2>=2.3 in /opt/conda/envs/psij/lib/python3.12/site-packages (from Sphinx==4.5.0->-r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 10)) (3.1.6)
+Requirement already satisfied: Pygments>=2.0 in /opt/conda/envs/psij/lib/python3.12/site-packages (from Sphinx==4.5.0->-r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 10)) (2.19.2)
+Collecting docutils<0.18,>=0.14 (from Sphinx==4.5.0->-r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 10))
+  Downloading docutils-0.17.1-py2.py3-none-any.whl.metadata (2.9 kB)
+Collecting snowballstemmer>=1.1 (from Sphinx==4.5.0->-r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 10))
+  Downloading snowballstemmer-3.0.1-py3-none-any.whl.metadata (7.9 kB)
+Collecting babel>=1.3 (from Sphinx==4.5.0->-r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 10))
+  Downloading babel-2.17.0-py3-none-any.whl.metadata (2.0 kB)
+Collecting alabaster<0.8,>=0.7 (from Sphinx==4.5.0->-r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 10))
+  Downloading alabaster-0.7.16-py3-none-any.whl.metadata (2.9 kB)
+Collecting imagesize (from Sphinx==4.5.0->-r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 10))
+  Downloading imagesize-1.4.1-py2.py3-none-any.whl.metadata (1.5 kB)
+Collecting docutils<0.18,>=0.14 (from Sphinx==4.5.0->-r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 10))
+  Downloading docutils-0.16-py2.py3-none-any.whl.metadata (2.7 kB)
+Requirement already satisfied: typing_extensions>=4.14.0 in /opt/conda/envs/psij/lib/python3.12/site-packages (from typeguard>=3.0.1->-r /home/cc/gc-action-temp/psij-python/requirements.txt (line 3)) (4.14.1)
+Requirement already satisfied: colorama in /opt/conda/envs/psij/lib/python3.12/site-packages (from radical.utils->-r /home/cc/gc-action-temp/psij-python/requirements-connector-radical.txt (line 1)) (0.4.6)
+Collecting msgpack (from radical.utils->-r /home/cc/gc-action-temp/psij-python/requirements-connector-radical.txt (line 1))
+  Downloading msgpack-1.1.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.4 kB)
+Collecting netifaces (from radical.utils->-r /home/cc/gc-action-temp/psij-python/requirements-connector-radical.txt (line 1))
+  Downloading netifaces-0.11.0.tar.gz (30 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting ntplib (from radical.utils->-r /home/cc/gc-action-temp/psij-python/requirements-connector-radical.txt (line 1))
+  Downloading ntplib-0.4.0-py2.py3-none-any.whl.metadata (1.6 kB)
+Requirement already satisfied: pyzmq in /opt/conda/envs/psij/lib/python3.12/site-packages (from radical.utils->-r /home/cc/gc-action-temp/psij-python/requirements-connector-radical.txt (line 1)) (26.1.0)
+Collecting regex (from radical.utils->-r /home/cc/gc-action-temp/psij-python/requirements-connector-radical.txt (line 1))
+  Downloading regex-2024.11.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (40 kB)
+Requirement already satisfied: setproctitle in /opt/conda/envs/psij/lib/python3.12/site-packages (from radical.utils->-r /home/cc/gc-action-temp/psij-python/requirements-connector-radical.txt (line 1)) (1.3.6)
+Collecting radical.gtod<1.110,>=1.100.0 (from radical.pilot->-r /home/cc/gc-action-temp/psij-python/requirements-connector-radical.txt (line 2))
+  Downloading radical_gtod-1.102.0.tar.gz (358 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: psij-python in /home/cc/psij/src (from radical.pilot->-r /home/cc/gc-action-temp/psij-python/requirements-connector-radical.txt (line 2)) (0.9.3)
+Requirement already satisfied: dill in /opt/conda/envs/psij/lib/python3.12/site-packages (from radical.pilot->-r /home/cc/gc-action-temp/psij-python/requirements-connector-radical.txt (line 2)) (0.3.9)
+INFO: pip is looking at multiple versions of sphinx-rtd-theme to determine which version is compatible with other requirements. This could take a while.
+Collecting sphinx_rtd_theme (from -r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 11))
+  Downloading sphinx_rtd_theme-3.0.1-py2.py3-none-any.whl.metadata (4.4 kB)
+  Downloading sphinx_rtd_theme-3.0.0-py2.py3-none-any.whl.metadata (4.4 kB)
+  Downloading sphinx_rtd_theme-2.0.0-py2.py3-none-any.whl.metadata (4.4 kB)
+  Downloading sphinx_rtd_theme-1.3.0-py2.py3-none-any.whl.metadata (4.5 kB)
+Collecting sphinxcontrib-jquery<5,>=4 (from sphinx_rtd_theme->-r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 11))
+  Downloading sphinxcontrib_jquery-4.1-py2.py3-none-any.whl.metadata (2.6 kB)
+Requirement already satisfied: iniconfig>=1 in /opt/conda/envs/psij/lib/python3.12/site-packages (from pytest>=6.2.0->-r /home/cc/gc-action-temp/psij-python/requirements-tests.txt (line 6)) (2.1.0)
+Requirement already satisfied: pluggy<2,>=1.5 in /opt/conda/envs/psij/lib/python3.12/site-packages (from pytest>=6.2.0->-r /home/cc/gc-action-temp/psij-python/requirements-tests.txt (line 6)) (1.6.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in /opt/conda/envs/psij/lib/python3.12/site-packages (from requests>=2.25.1->-r /home/cc/gc-action-temp/psij-python/requirements-tests.txt (line 7)) (3.4.2)
+Requirement already satisfied: idna<4,>=2.5 in /opt/conda/envs/psij/lib/python3.12/site-packages (from requests>=2.25.1->-r /home/cc/gc-action-temp/psij-python/requirements-tests.txt (line 7)) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /opt/conda/envs/psij/lib/python3.12/site-packages (from requests>=2.25.1->-r /home/cc/gc-action-temp/psij-python/requirements-tests.txt (line 7)) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in /opt/conda/envs/psij/lib/python3.12/site-packages (from requests>=2.25.1->-r /home/cc/gc-action-temp/psij-python/requirements-tests.txt (line 7)) (2025.7.14)
+Collecting coverage>=7.5 (from coverage[toml]>=7.5->pytest-cov->-r /home/cc/gc-action-temp/psij-python/requirements-tests.txt (line 8))
+  Downloading coverage-7.9.2-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.9 kB)
+Collecting mypy_extensions>=1.0.0 (from mypy>=0.931->-r requirements-dev.txt (line 9))
+  Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting pathspec>=0.9.0 (from mypy>=0.931->-r requirements-dev.txt (line 9))
+  Downloading pathspec-0.12.1-py3-none-any.whl.metadata (21 kB)
+Collecting mccabe<0.8.0,>=0.7.0 (from flake8->-r requirements-dev.txt (line 10))
+  Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+Collecting pycodestyle<2.15.0,>=2.14.0 (from flake8->-r requirements-dev.txt (line 10))
+  Downloading pycodestyle-2.14.0-py2.py3-none-any.whl.metadata (4.5 kB)
+Collecting pyflakes<3.5.0,>=3.4.0 (from flake8->-r requirements-dev.txt (line 10))
+  Downloading pyflakes-3.4.0-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting pydocstyle>=2.1 (from flake8-docstrings->-r requirements-dev.txt (line 11))
+  Downloading pydocstyle-6.3.0-py3-none-any.whl.metadata (3.7 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in /opt/conda/envs/psij/lib/python3.12/site-packages (from Jinja2>=2.3->Sphinx==4.5.0->-r /home/cc/gc-action-temp/psij-python/requirements-docs.txt (line 10)) (3.0.2)
+Downloading Sphinx-4.5.0-py3-none-any.whl (3.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 53.8 MB/s eta 0:00:00
+Downloading sphinx_tabs-3.2.0-py3-none-any.whl (9.8 kB)
+Downloading sphinxcontrib_applehelp-1.0.4-py3-none-any.whl (120 kB)
+Downloading sphinxcontrib_devhelp-1.0.2-py2.py3-none-any.whl (84 kB)
+Downloading sphinxcontrib_htmlhelp-2.0.1-py3-none-any.whl (99 kB)
+Downloading sphinxcontrib_serializinghtml-1.1.5-py2.py3-none-any.whl (94 kB)
+Downloading sphinxcontrib_qthelp-1.0.3-py2.py3-none-any.whl (90 kB)
+Downloading cloud_sptheme-1.10.1.post20200504175005-py2.py3-none-any.whl (91 kB)
+Downloading filelock-3.17.0-py3-none-any.whl (16 kB)
+Downloading alabaster-0.7.16-py3-none-any.whl (13 kB)
+Downloading docutils-0.16-py2.py3-none-any.whl (548 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 548.2/548.2 kB 36.1 MB/s eta 0:00:00
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading sphinx_rtd_theme-1.3.0-py2.py3-none-any.whl (2.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.8/2.8 MB 95.4 MB/s eta 0:00:00
+Downloading sphinxcontrib_jquery-4.1-py2.py3-none-any.whl (121 kB)
+Downloading sphinx_multiversion-0.2.4-py3-none-any.whl (9.6 kB)
+Downloading pytest_cov-6.2.1-py3-none-any.whl (24 kB)
+Downloading pytest_timeout-2.4.0-py3-none-any.whl (14 kB)
+Downloading mypy-1.17.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (12.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.7/12.7 MB 56.9 MB/s eta 0:00:00
+Downloading flake8-7.3.0-py2.py3-none-any.whl (57 kB)
+Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+Downloading pycodestyle-2.14.0-py2.py3-none-any.whl (31 kB)
+Downloading pyflakes-3.4.0-py2.py3-none-any.whl (63 kB)
+Downloading flake8_docstrings-1.7.0-py2.py3-none-any.whl (5.0 kB)
+Downloading autopep8-2.3.2-py2.py3-none-any.whl (45 kB)
+Downloading types_requests-2.32.4.20250611-py3-none-any.whl (20 kB)
+Downloading babel-2.17.0-py3-none-any.whl (10.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.2/10.2 MB 111.0 MB/s eta 0:00:00
+Downloading coverage-7.9.2-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (245 kB)
+Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+Downloading pathspec-0.12.1-py3-none-any.whl (31 kB)
+Downloading pydocstyle-6.3.0-py3-none-any.whl (38 kB)
+Downloading snowballstemmer-3.0.1-py3-none-any.whl (103 kB)
+Downloading imagesize-1.4.1-py2.py3-none-any.whl (8.8 kB)
+Downloading msgpack-1.1.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (426 kB)
+Downloading ntplib-0.4.0-py2.py3-none-any.whl (6.8 kB)
+Downloading regex-2024.11.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (796 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 796.9/796.9 kB 92.3 MB/s eta 0:00:00
+Downloading sphinxcontrib_jsmath-1.0.1-py2.py3-none-any.whl (5.1 kB)
+Building wheels for collected packages: radical.utils, radical.pilot, radical.gtod, netifaces
+  Building wheel for radical.utils (pyproject.toml): started
+  Building wheel for radical.utils (pyproject.toml): finished with status 'done'
+  Created wheel for radical.utils: filename=radical_utils-1.102.0-py3-none-any.whl size=192939 sha256=ec006d4279f8a18f8852f9251f323e28e67fb872c31fd4bb23e524bfb2514553
+  Stored in directory: /home/cc/.cache/pip/wheels/03/3c/a4/ad5b339a06cb60afa4e3c10998ed282440ce6f399af412c056
+  Building wheel for radical.pilot (pyproject.toml): started
+  Building wheel for radical.pilot (pyproject.toml): finished with status 'done'
+  Created wheel for radical.pilot: filename=radical_pilot-1.102.0-py3-none-any.whl size=724671 sha256=18a0b53bee1e32b2ae999ea5029d70ed59baadbf6bc410deb9bf393aee7f457e
+  Stored in directory: /home/cc/.cache/pip/wheels/94/e2/9f/4610a87f557fbfef3986151a00b17a15067c118b21e7a31196
+  Building wheel for radical.gtod (pyproject.toml): started
+  Building wheel for radical.gtod (pyproject.toml): finished with status 'done'
+  Created wheel for radical.gtod: filename=radical_gtod-1.102.0-py3-none-any.whl size=337051 sha256=7430b184589572345bb3ef50120ac8fd7410df1b294eced77b421ad413135db1
+  Stored in directory: /home/cc/.cache/pip/wheels/da/26/2c/e7aefa8aa7c2b906282649f19beef07ec58c2f707641b68279
+  Building wheel for netifaces (setup.py): started
+  Building wheel for netifaces (setup.py): finished with status 'done'
+  Created wheel for netifaces: filename=netifaces-0.11.0-cp312-cp312-linux_x86_64.whl size=14389 sha256=e96db8b8b3d05d2cb1941722f92351d0359c6fb204ad01f43c9c8b0334098169
+  Stored in directory: /home/cc/.cache/pip/wheels/63/fa/57/da80d0ffc8f993315c479b7cd4c8fb1c23910c8baccf6b1b27
+Successfully built radical.utils radical.pilot radical.gtod netifaces
+Installing collected packages: ntplib, netifaces, types-requests, sphinxcontrib-serializinghtml, sphinxcontrib-qthelp, sphinxcontrib-jsmath, sphinxcontrib-htmlhelp, sphinxcontrib-devhelp, sphinxcontrib-applehelp, snowballstemmer, six, regex, pyflakes, pycodestyle, pathspec, mypy_extensions, msgpack, mccabe, imagesize, filelock, docutils, coverage, babel, alabaster, Sphinx, radical.utils, pytest-timeout, pydocstyle, mypy, flake8, autopep8, sphinxcontrib-jquery, sphinx-tabs, sphinx-multiversion, radical.gtod, pytest-cov, flake8-docstrings, cloud_sptheme, sphinx_rtd_theme, radical.pilot
+  Attempting uninstall: filelock
+    Found existing installation: filelock 3.18.0
+    Uninstalling filelock-3.18.0:
+      Successfully uninstalled filelock-3.18.0
+  Attempting uninstall: docutils
+    Found existing installation: docutils 0.21.2
+    Uninstalling docutils-0.21.2:
+      Successfully uninstalled docutils-0.21.2
+
+Successfully installed Sphinx-4.5.0 alabaster-0.7.16 autopep8-2.3.2 babel-2.17.0 cloud_sptheme-1.10.1.post20200504175005 coverage-7.9.2 docutils-0.16 filelock-3.17.0 flake8-7.3.0 flake8-docstrings-1.7.0 imagesize-1.4.1 mccabe-0.7.0 msgpack-1.1.1 mypy-1.17.0 mypy_extensions-1.1.0 netifaces-0.11.0 ntplib-0.4.0 pathspec-0.12.1 pycodestyle-2.14.0 pydocstyle-6.3.0 pyflakes-3.4.0 pytest-cov-6.2.1 pytest-timeout-2.4.0 radical.gtod-1.102.0 radical.pilot-1.102.0 radical.utils-1.102.0 regex-2024.11.6 six-1.17.0 snowballstemmer-3.0.1 sphinx-multiversion-0.2.4 sphinx-tabs-3.2.0 sphinx_rtd_theme-1.3.0 sphinxcontrib-applehelp-1.0.4 sphinxcontrib-devhelp-1.0.2 sphinxcontrib-htmlhelp-2.0.1 sphinxcontrib-jquery-4.1 sphinxcontrib-jsmath-1.0.1 sphinxcontrib-qthelp-1.0.3 sphinxcontrib-serializinghtml-1.1.5 types-requests-2.32.4.20250611
+============================= test session starts ==============================
+platform linux -- Python 3.12.0, pytest-8.4.1, pluggy-1.6.0
+rootdir: /home/cc/gc-action-temp/psij-python
+plugins: cov-6.2.1, timeout-2.4.0, typeguard-4.4.4
+collected 132 items
+
+tests/getting_started/test_simple_example.py ..FFF                       [  3%]
+tests/test_callbacks.py ..                                               [  5%]
+tests/test_doc_examples.py ...                                           [  7%]
+tests/test_executor.py ..FFF..FFF..FFF..FFF..FFF..FFF..FFF..FFF..FFF..FF [ 44%]
+F..FFF..FFF......                                                        [ 57%]
+tests/test_executor_loading.py FFFF                                      [ 60%]
+tests/test_executor_versions.py .                                        [ 61%]
+tests/test_infrastructure.py ..                                          [ 62%]
+tests/test_issue_387_1.py .                                              [ 63%]
+tests/test_issue_387_2.py .                                              [ 64%]
+tests/test_issue_387_3.py .                                              [ 65%]
+tests/test_issue_435.py ..FFF                                            [ 68%]
+tests/test_job_spec.py ..                                                [ 70%]
+tests/test_mpi.py sssss                                                  [ 74%]
+tests/test_nodefile.py s.sFF                                             [ 78%]
+tests/test_resources.py ..ssssF                                          [ 83%]
+tests/test_serialization.py .                                            [ 84%]
+tests/user_guide/test_attach.py .                                        [ 84%]
+tests/user_guide/test_doc_callbacks.py .                                 [ 85%]
+tests/user_guide/test_environment.py .                                   [ 86%]
+tests/user_guide/test_job_arguments.py .                                 [ 87%]
+tests/user_guide/test_job_wait.py .                                      [ 87%]
+tests/user_guide/test_job_wait_active.py .                               [ 88%]
+tests/user_guide/test_multiple_jobs.py .                                 [ 89%]
+tests/user_guide/test_plain_job.py .                                     [ 90%]
+tests/user_guide/test_prelaunch.py .                                     [ 90%]
+tests/user_guide/test_redirect.py .                                      [ 91%]
+tests/user_guide/test_resourcespec.py ..FFF                              [ 95%]
+tests/user_guide/test_scheduling_information.py ..FFF                    [ 99%]
+tests/user_guide/test_simple_job_with_props.py .                         [100%]
+
+=================================== FAILURES ===================================
+______________ test_getting_started_single_job[batch-test:single] ______________
+
+execparams = batch-test:single
+
+    def test_getting_started_single_job(execparams: ExecutorTestParams) -> None:
+        from psij import Job, JobSpec
+    
+        job = Job(JobSpec(executable="/bin/date"))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/getting_started/test_simple_example.py:10: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:42 DEBUG New Job: Job[id=ddf8f33b-6008-4348-9932-223406656f11, native_id=None, executor=None, status=JobStatus[NEW, time=1752620502.3163552]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=ddf8f33b-6008-4348-9932-223406656f11, native_id=None, executor=None, status=JobStatus[NEW, time=1752620502.3163552]]
+_____________ test_getting_started_single_job[batch-test:multiple] _____________
+
+execparams = batch-test:multiple
+
+    def test_getting_started_single_job(execparams: ExecutorTestParams) -> None:
+        from psij import Job, JobSpec
+    
+        job = Job(JobSpec(executable="/bin/date"))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/getting_started/test_simple_example.py:10: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:42 DEBUG New Job: Job[id=583b799c-1aa3-4b76-a99e-4cb8af4ab240, native_id=None, executor=None, status=JobStatus[NEW, time=1752620502.38408]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=583b799c-1aa3-4b76-a99e-4cb8af4ab240, native_id=None, executor=None, status=JobStatus[NEW, time=1752620502.38408]]
+____________ test_getting_started_single_job[batch-test:batch-test] ____________
+
+execparams = batch-test:batch-test
+
+    def test_getting_started_single_job(execparams: ExecutorTestParams) -> None:
+        from psij import Job, JobSpec
+    
+        job = Job(JobSpec(executable="/bin/date"))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/getting_started/test_simple_example.py:10: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:42 DEBUG New Job: Job[id=ac50ceb9-a155-4998-a36f-aca6656e6654, native_id=None, executor=None, status=JobStatus[NEW, time=1752620502.3950584]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=ac50ceb9-a155-4998-a36f-aca6656e6654, native_id=None, executor=None, status=JobStatus[NEW, time=1752620502.3950584]]
+______________________ test_simple_job[batch-test:single] ______________________
+
+execparams = batch-test:single
+
+    def test_simple_job(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/date', launcher=execparams.launcher))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:42 DEBUG New Job: Job[id=28600441-a0c8-450a-8173-bad54e3c4170, native_id=None, executor=None, status=JobStatus[NEW, time=1752620502.8854773]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=28600441-a0c8-450a-8173-bad54e3c4170, native_id=None, executor=None, status=JobStatus[NEW, time=1752620502.8854773]]
+_____________________ test_simple_job[batch-test:multiple] _____________________
+
+execparams = batch-test:multiple
+
+    def test_simple_job(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/date', launcher=execparams.launcher))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:42 DEBUG New Job: Job[id=eddf7dda-99ad-4982-b976-1650347b0007, native_id=None, executor=None, status=JobStatus[NEW, time=1752620502.9290848]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=eddf7dda-99ad-4982-b976-1650347b0007, native_id=None, executor=None, status=JobStatus[NEW, time=1752620502.9290848]]
+____________________ test_simple_job[batch-test:batch-test] ____________________
+
+execparams = batch-test:batch-test
+
+    def test_simple_job(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/date', launcher=execparams.launcher))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:42 DEBUG New Job: Job[id=7b93f118-872f-40f2-9f1f-7d633af8316a, native_id=None, executor=None, status=JobStatus[NEW, time=1752620502.9518793]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=7b93f118-872f-40f2-9f1f-7d633af8316a, native_id=None, executor=None, status=JobStatus[NEW, time=1752620502.9518793]]
+_________________ test_simple_job_redirect[batch-test:single] __________________
+
+execparams = batch-test:single
+
+    def test_simple_job_redirect(execparams: ExecutorTestParams) -> None:
+        _make_test_dir()
+        with TemporaryDirectory(dir=Path.home() / '.psij' / 'test') as td:
+            outp = Path(td, 'stdout.txt')
+            job = Job(JobSpec(executable='/bin/echo', arguments=['-n', '_x_'], stdout_path=outp))
+>           ex = _get_executor_instance(execparams, job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:42 DEBUG New Job: Job[id=13cad757-8262-4875-8a0a-17aee9225c50, native_id=None, executor=None, status=JobStatus[NEW, time=1752620502.9953349]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=13cad757-8262-4875-8a0a-17aee9225c50, native_id=None, executor=None, status=JobStatus[NEW, time=1752620502.9953349]]
+________________ test_simple_job_redirect[batch-test:multiple] _________________
+
+execparams = batch-test:multiple
+
+    def test_simple_job_redirect(execparams: ExecutorTestParams) -> None:
+        _make_test_dir()
+        with TemporaryDirectory(dir=Path.home() / '.psij' / 'test') as td:
+            outp = Path(td, 'stdout.txt')
+            job = Job(JobSpec(executable='/bin/echo', arguments=['-n', '_x_'], stdout_path=outp))
+>           ex = _get_executor_instance(execparams, job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:43 DEBUG New Job: Job[id=d918f64a-e69a-458b-b2fc-855468b17c47, native_id=None, executor=None, status=JobStatus[NEW, time=1752620503.0126965]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=d918f64a-e69a-458b-b2fc-855468b17c47, native_id=None, executor=None, status=JobStatus[NEW, time=1752620503.0126965]]
+_______________ test_simple_job_redirect[batch-test:batch-test] ________________
+
+execparams = batch-test:batch-test
+
+    def test_simple_job_redirect(execparams: ExecutorTestParams) -> None:
+        _make_test_dir()
+        with TemporaryDirectory(dir=Path.home() / '.psij' / 'test') as td:
+            outp = Path(td, 'stdout.txt')
+            job = Job(JobSpec(executable='/bin/echo', arguments=['-n', '_x_'], stdout_path=outp))
+>           ex = _get_executor_instance(execparams, job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:43 DEBUG New Job: Job[id=30294b89-1679-40ed-8641-e64a23d73ad6, native_id=None, executor=None, status=JobStatus[NEW, time=1752620503.0292146]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=30294b89-1679-40ed-8641-e64a23d73ad6, native_id=None, executor=None, status=JobStatus[NEW, time=1752620503.0292146]]
+___________________ test_stderr_redirect[batch-test:single] ____________________
+
+execparams = batch-test:single
+
+    def test_stderr_redirect(execparams: ExecutorTestParams) -> None:
+        _make_test_dir()
+        with TemporaryDirectory(dir=Path.home() / '.psij' / 'test') as td:
+            outp = Path(td, 'stderr.txt')
+            job = Job(JobSpec(executable='/bin/bash', arguments=['-c', 'echo -n _x_ 1>&2'],
+                              stderr_path=outp))
+>           ex = _get_executor_instance(execparams, job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:43 DEBUG New Job: Job[id=7a469f61-e99c-45d7-a6dc-d4302d4d3052, native_id=None, executor=None, status=JobStatus[NEW, time=1752620503.070494]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=7a469f61-e99c-45d7-a6dc-d4302d4d3052, native_id=None, executor=None, status=JobStatus[NEW, time=1752620503.070494]]
+__________________ test_stderr_redirect[batch-test:multiple] ___________________
+
+execparams = batch-test:multiple
+
+    def test_stderr_redirect(execparams: ExecutorTestParams) -> None:
+        _make_test_dir()
+        with TemporaryDirectory(dir=Path.home() / '.psij' / 'test') as td:
+            outp = Path(td, 'stderr.txt')
+            job = Job(JobSpec(executable='/bin/bash', arguments=['-c', 'echo -n _x_ 1>&2'],
+                              stderr_path=outp))
+>           ex = _get_executor_instance(execparams, job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:43 DEBUG New Job: Job[id=e33b3bb1-2fd0-45ea-8ce5-379fa2d2b51f, native_id=None, executor=None, status=JobStatus[NEW, time=1752620503.0862572]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=e33b3bb1-2fd0-45ea-8ce5-379fa2d2b51f, native_id=None, executor=None, status=JobStatus[NEW, time=1752620503.0862572]]
+_________________ test_stderr_redirect[batch-test:batch-test] __________________
+
+execparams = batch-test:batch-test
+
+    def test_stderr_redirect(execparams: ExecutorTestParams) -> None:
+        _make_test_dir()
+        with TemporaryDirectory(dir=Path.home() / '.psij' / 'test') as td:
+            outp = Path(td, 'stderr.txt')
+            job = Job(JobSpec(executable='/bin/bash', arguments=['-c', 'echo -n _x_ 1>&2'],
+                              stderr_path=outp))
+>           ex = _get_executor_instance(execparams, job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:43 DEBUG New Job: Job[id=56f5d6c8-5570-43d7-acf7-384f8ee8e67f, native_id=None, executor=None, status=JobStatus[NEW, time=1752620503.101429]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=56f5d6c8-5570-43d7-acf7-384f8ee8e67f, native_id=None, executor=None, status=JobStatus[NEW, time=1752620503.101429]]
+________________________ test_attach[batch-test:single] ________________________
+
+execparams = batch-test:single
+
+    def test_attach(execparams: ExecutorTestParams) -> None:
+        job1 = Job(JobSpec(executable='/bin/sleep', arguments=['1']))
+>       ex = _get_executor_instance(execparams, job1)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:57: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:45 DEBUG New Job: Job[id=10438b55-016e-407a-b6f5-935bf72cbba3, native_id=None, executor=None, status=JobStatus[NEW, time=1752620505.1415882]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=10438b55-016e-407a-b6f5-935bf72cbba3, native_id=None, executor=None, status=JobStatus[NEW, time=1752620505.1415882]]
+_______________________ test_attach[batch-test:multiple] _______________________
+
+execparams = batch-test:multiple
+
+    def test_attach(execparams: ExecutorTestParams) -> None:
+        job1 = Job(JobSpec(executable='/bin/sleep', arguments=['1']))
+>       ex = _get_executor_instance(execparams, job1)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:57: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:45 DEBUG New Job: Job[id=482ed121-882c-448f-80d6-799213ed88fa, native_id=None, executor=None, status=JobStatus[NEW, time=1752620505.177419]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=482ed121-882c-448f-80d6-799213ed88fa, native_id=None, executor=None, status=JobStatus[NEW, time=1752620505.177419]]
+______________________ test_attach[batch-test:batch-test] ______________________
+
+execparams = batch-test:batch-test
+
+    def test_attach(execparams: ExecutorTestParams) -> None:
+        job1 = Job(JobSpec(executable='/bin/sleep', arguments=['1']))
+>       ex = _get_executor_instance(execparams, job1)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:57: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:45 DEBUG New Job: Job[id=0d30d3dc-ed1d-4a24-85b9-c6b76e79ba73, native_id=None, executor=None, status=JobStatus[NEW, time=1752620505.2038436]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=0d30d3dc-ed1d-4a24-85b9-c6b76e79ba73, native_id=None, executor=None, status=JobStatus[NEW, time=1752620505.2038436]]
+_______________________ test_attach2[batch-test:single] ________________________
+
+execparams = batch-test:single
+
+    def test_attach2(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/sleep', arguments=['1']))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:73: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:47 DEBUG New Job: Job[id=844ed3d3-ee8b-41db-aa23-cc6d5e7cc297, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.2530878]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=844ed3d3-ee8b-41db-aa23-cc6d5e7cc297, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.2530878]]
+______________________ test_attach2[batch-test:multiple] _______________________
+
+execparams = batch-test:multiple
+
+    def test_attach2(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/sleep', arguments=['1']))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:73: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:47 DEBUG New Job: Job[id=6d15bbc8-6b6f-4f2c-b1a1-5b926d420f6d, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.3042505]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=6d15bbc8-6b6f-4f2c-b1a1-5b926d420f6d, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.3042505]]
+_____________________ test_attach2[batch-test:batch-test] ______________________
+
+execparams = batch-test:batch-test
+
+    def test_attach2(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/sleep', arguments=['1']))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:73: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:47 DEBUG New Job: Job[id=3e992db3-1ae2-4008-9d2a-c08c00cf41ec, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.3320725]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=3e992db3-1ae2-4008-9d2a-c08c00cf41ec, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.3320725]]
+________________________ test_cancel[batch-test:single] ________________________
+
+execparams = batch-test:single
+
+    def test_cancel(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/sleep', arguments=['60']))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:47 DEBUG New Job: Job[id=61471b8a-fbe2-4a7f-baed-4b33e137eed8, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.3649492]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=61471b8a-fbe2-4a7f-baed-4b33e137eed8, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.3649492]]
+_______________________ test_cancel[batch-test:multiple] _______________________
+
+execparams = batch-test:multiple
+
+    def test_cancel(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/sleep', arguments=['60']))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:47 DEBUG New Job: Job[id=f195c4a3-6380-43ae-abc1-4a75b798f831, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.4053886]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=f195c4a3-6380-43ae-abc1-4a75b798f831, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.4053886]]
+______________________ test_cancel[batch-test:batch-test] ______________________
+
+execparams = batch-test:batch-test
+
+    def test_cancel(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/sleep', arguments=['60']))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:47 DEBUG New Job: Job[id=507b763e-a5dd-4aed-9bf6-08ab962a0bec, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.4213088]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=507b763e-a5dd-4aed-9bf6-08ab962a0bec, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.4213088]]
+_____________________ test_failing_job[batch-test:single] ______________________
+
+execparams = batch-test:single
+
+    def test_failing_job(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/false'))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:99: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:47 DEBUG New Job: Job[id=17a7617e-c243-4423-918e-07a0da6c2844, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.4605362]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=17a7617e-c243-4423-918e-07a0da6c2844, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.4605362]]
+____________________ test_failing_job[batch-test:multiple] _____________________
+
+execparams = batch-test:multiple
+
+    def test_failing_job(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/false'))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:99: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:47 DEBUG New Job: Job[id=2fae7d44-4422-4a6c-82ba-6429b3189a2a, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.4759135]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=2fae7d44-4422-4a6c-82ba-6429b3189a2a, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.4759135]]
+___________________ test_failing_job[batch-test:batch-test] ____________________
+
+execparams = batch-test:batch-test
+
+    def test_failing_job(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/false'))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:99: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:47 DEBUG New Job: Job[id=67b31adb-b639-448a-ac2a-ad0f4e4f8164, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.4901996]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=67b31adb-b639-448a-ac2a-ad0f4e4f8164, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.4901996]]
+__________________ test_missing_executable[batch-test:single] __________________
+
+execparams = batch-test:single
+
+    def test_missing_executable(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/no_such_file_or_directory'))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:47 DEBUG New Job: Job[id=c37850b0-79ac-437a-8391-b146e4c646b2, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.530874]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=c37850b0-79ac-437a-8391-b146e4c646b2, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.530874]]
+_________________ test_missing_executable[batch-test:multiple] _________________
+
+execparams = batch-test:multiple
+
+    def test_missing_executable(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/no_such_file_or_directory'))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:47 DEBUG New Job: Job[id=dfc1ddfe-daa3-44d0-ad31-2a79e232d137, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.5461593]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=dfc1ddfe-daa3-44d0-ad31-2a79e232d137, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.5461593]]
+________________ test_missing_executable[batch-test:batch-test] ________________
+
+execparams = batch-test:batch-test
+
+    def test_missing_executable(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/no_such_file_or_directory'))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:47 DEBUG New Job: Job[id=5ebf3ff5-d3f7-43b1-afe0-76a91ef25fba, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.560139]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=5ebf3ff5-d3f7-43b1-afe0-76a91ef25fba, native_id=None, executor=None, status=JobStatus[NEW, time=1752620507.560139]]
+____________________ test_parallel_jobs[batch-test:single] _____________________
+
+execparams = batch-test:single
+
+    def test_parallel_jobs(execparams: ExecutorTestParams) -> None:
+        spec = JobSpec(executable='/bin/sleep', arguments=['5'])
+        job1 = Job(spec)
+        job2 = Job(spec)
+>       ex = _get_executor_instance(execparams, job1)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:57 DEBUG New Job: Job[id=bb268d4b-e5d9-4d98-a68a-790f7b8fbae2, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.614152]]
+2025-07-15 23:01:57 DEBUG New Job: Job[id=f8b1b0a9-d85d-4e76-806b-c97adc8b33a4, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.6145017]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=bb268d4b-e5d9-4d98-a68a-790f7b8fbae2, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.614152]]
+DEBUG    psij.job:job.py:51 New Job: Job[id=f8b1b0a9-d85d-4e76-806b-c97adc8b33a4, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.6145017]]
+___________________ test_parallel_jobs[batch-test:multiple] ____________________
+
+execparams = batch-test:multiple
+
+    def test_parallel_jobs(execparams: ExecutorTestParams) -> None:
+        spec = JobSpec(executable='/bin/sleep', arguments=['5'])
+        job1 = Job(spec)
+        job2 = Job(spec)
+>       ex = _get_executor_instance(execparams, job1)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:57 DEBUG New Job: Job[id=98e649fb-96d3-4b6a-a3f1-b71dcf0ec7e5, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.666814]]
+2025-07-15 23:01:57 DEBUG New Job: Job[id=95592aaf-ef43-4ef4-b1a9-53d65ff0ca78, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.6670425]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=98e649fb-96d3-4b6a-a3f1-b71dcf0ec7e5, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.666814]]
+DEBUG    psij.job:job.py:51 New Job: Job[id=95592aaf-ef43-4ef4-b1a9-53d65ff0ca78, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.6670425]]
+__________________ test_parallel_jobs[batch-test:batch-test] ___________________
+
+execparams = batch-test:batch-test
+
+    def test_parallel_jobs(execparams: ExecutorTestParams) -> None:
+        spec = JobSpec(executable='/bin/sleep', arguments=['5'])
+        job1 = Job(spec)
+        job2 = Job(spec)
+>       ex = _get_executor_instance(execparams, job1)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:57 DEBUG New Job: Job[id=caa3bdf1-06d5-45db-b7c3-b266d0c24418, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.6932027]]
+2025-07-15 23:01:57 DEBUG New Job: Job[id=e4689c8a-0d47-4ae9-b1c1-a62472e6b161, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.6933415]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=caa3bdf1-06d5-45db-b7c3-b266d0c24418, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.6932027]]
+DEBUG    psij.job:job.py:51 New Job: Job[id=e4689c8a-0d47-4ae9-b1c1-a62472e6b161, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.6933415]]
+_______________________ test_env_var[batch-test:single] ________________________
+
+execparams = batch-test:single
+
+    def test_env_var(execparams: ExecutorTestParams) -> None:
+        _make_test_dir()
+        with TemporaryDirectory(dir=Path.home() / '.psij' / 'test') as td:
+            outp = Path(td, 'stdout.txt')
+            job = Job(JobSpec(executable='/bin/bash',
+                              arguments=['-c', 'env > /tmp/t; echo -n $TEST_VAR$TEST_INT'],
+                              stdout_path=outp))
+            assert job.spec is not None
+            job.spec.environment = {'TEST_INT': 1, 'TEST_VAR': '_y_'}  # type: ignore
+>           ex = _get_executor_instance(execparams, job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:146: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:57 DEBUG New Job: Job[id=32ef5b89-9941-4593-bd90-9a7902738007, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.7410598]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=32ef5b89-9941-4593-bd90-9a7902738007, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.7410598]]
+______________________ test_env_var[batch-test:multiple] _______________________
+
+execparams = batch-test:multiple
+
+    def test_env_var(execparams: ExecutorTestParams) -> None:
+        _make_test_dir()
+        with TemporaryDirectory(dir=Path.home() / '.psij' / 'test') as td:
+            outp = Path(td, 'stdout.txt')
+            job = Job(JobSpec(executable='/bin/bash',
+                              arguments=['-c', 'env > /tmp/t; echo -n $TEST_VAR$TEST_INT'],
+                              stdout_path=outp))
+            assert job.spec is not None
+            job.spec.environment = {'TEST_INT': 1, 'TEST_VAR': '_y_'}  # type: ignore
+>           ex = _get_executor_instance(execparams, job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:146: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:57 DEBUG New Job: Job[id=751cb2bf-e51d-4494-b79d-949b1d417cbd, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.7603917]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=751cb2bf-e51d-4494-b79d-949b1d417cbd, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.7603917]]
+_____________________ test_env_var[batch-test:batch-test] ______________________
+
+execparams = batch-test:batch-test
+
+    def test_env_var(execparams: ExecutorTestParams) -> None:
+        _make_test_dir()
+        with TemporaryDirectory(dir=Path.home() / '.psij' / 'test') as td:
+            outp = Path(td, 'stdout.txt')
+            job = Job(JobSpec(executable='/bin/bash',
+                              arguments=['-c', 'env > /tmp/t; echo -n $TEST_VAR$TEST_INT'],
+                              stdout_path=outp))
+            assert job.spec is not None
+            job.spec.environment = {'TEST_INT': 1, 'TEST_VAR': '_y_'}  # type: ignore
+>           ex = _get_executor_instance(execparams, job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:146: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:57 DEBUG New Job: Job[id=53f3463a-a533-45de-93e8-589bc7d2cf47, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.7787578]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=53f3463a-a533-45de-93e8-589bc7d2cf47, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.7787578]]
+____________________ test_stdin_redirect[batch-test:single] ____________________
+
+execparams = batch-test:single
+
+    def test_stdin_redirect(execparams: ExecutorTestParams) -> None:
+        _make_test_dir()
+        with TemporaryDirectory(dir=Path.home() / '.psij' / 'test') as td:
+            inp = Path(td, 'stdin.txt')
+            outp = Path(td, 'stdout.txt')
+    
+            rnd_str = uuid.uuid4().hex
+    
+            with open(inp, 'w') as inf:
+                inf.write(rnd_str)
+    
+            job = Job(JobSpec(executable='/bin/cat', stdin_path=inp, stdout_path=outp))
+>           ex = _get_executor_instance(execparams, job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:168: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:57 DEBUG New Job: Job[id=78e281b9-bc08-4e48-8281-c1b0de20d5ba, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.8213727]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=78e281b9-bc08-4e48-8281-c1b0de20d5ba, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.8213727]]
+___________________ test_stdin_redirect[batch-test:multiple] ___________________
+
+execparams = batch-test:multiple
+
+    def test_stdin_redirect(execparams: ExecutorTestParams) -> None:
+        _make_test_dir()
+        with TemporaryDirectory(dir=Path.home() / '.psij' / 'test') as td:
+            inp = Path(td, 'stdin.txt')
+            outp = Path(td, 'stdout.txt')
+    
+            rnd_str = uuid.uuid4().hex
+    
+            with open(inp, 'w') as inf:
+                inf.write(rnd_str)
+    
+            job = Job(JobSpec(executable='/bin/cat', stdin_path=inp, stdout_path=outp))
+>           ex = _get_executor_instance(execparams, job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:168: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:57 DEBUG New Job: Job[id=4ba915ac-a78d-43d6-83bd-54024a2040ed, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.8381891]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=4ba915ac-a78d-43d6-83bd-54024a2040ed, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.8381891]]
+__________________ test_stdin_redirect[batch-test:batch-test] __________________
+
+execparams = batch-test:batch-test
+
+    def test_stdin_redirect(execparams: ExecutorTestParams) -> None:
+        _make_test_dir()
+        with TemporaryDirectory(dir=Path.home() / '.psij' / 'test') as td:
+            inp = Path(td, 'stdin.txt')
+            outp = Path(td, 'stdout.txt')
+    
+            rnd_str = uuid.uuid4().hex
+    
+            with open(inp, 'w') as inf:
+                inf.write(rnd_str)
+    
+            job = Job(JobSpec(executable='/bin/cat', stdin_path=inp, stdout_path=outp))
+>           ex = _get_executor_instance(execparams, job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:168: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:01:57 DEBUG New Job: Job[id=1b4940bd-c684-4f2c-8b78-c86fdc215c6e, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.8536851]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=1b4940bd-c684-4f2c-8b78-c86fdc215c6e, native_id=None, executor=None, status=JobStatus[NEW, time=1752620517.8536851]]
+_________________________ test_list[batch-test:single] _________________________
+
+execparams = batch-test:single
+
+    def test_list(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/sleep', arguments=['4']))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:181: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:02:05 DEBUG New Job: Job[id=001e387d-0ded-4438-b07c-a2675116d867, native_id=None, executor=None, status=JobStatus[NEW, time=1752620525.8936973]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=001e387d-0ded-4438-b07c-a2675116d867, native_id=None, executor=None, status=JobStatus[NEW, time=1752620525.8936973]]
+________________________ test_list[batch-test:multiple] ________________________
+
+execparams = batch-test:multiple
+
+    def test_list(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/sleep', arguments=['4']))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:181: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:02:05 DEBUG New Job: Job[id=bd1959b6-1ba4-4477-84f5-e1f42ec9b7c1, native_id=None, executor=None, status=JobStatus[NEW, time=1752620525.930836]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=bd1959b6-1ba4-4477-84f5-e1f42ec9b7c1, native_id=None, executor=None, status=JobStatus[NEW, time=1752620525.930836]]
+_______________________ test_list[batch-test:batch-test] _______________________
+
+execparams = batch-test:batch-test
+
+    def test_list(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/sleep', arguments=['4']))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor.py:181: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:02:05 DEBUG New Job: Job[id=649f1b4a-9347-4807-8f8b-3e7ec9021d97, native_id=None, executor=None, status=JobStatus[NEW, time=1752620525.9582045]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=649f1b4a-9347-4807-8f8b-3e7ec9021d97, native_id=None, executor=None, status=JobStatus[NEW, time=1752620525.9582045]]
+____________________________ test_executor_loading _____________________________
+
+    def test_executor_loading() -> None:
+>       je1 = JobExecutor.get_instance('_always_loads')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_executor_loading.py:5: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = '_always_loads', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "_always_loads". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+___________________________ test_cross_path_loading1 ___________________________
+
+    def test_cross_path_loading1() -> None:
+>       JobExecutor.get_instance('p1-tp1')
+
+tests/test_executor_loading.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'p1-tp1', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "p1-tp1". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+___________________________ test_cross_path_loading2 ___________________________
+
+    def test_cross_path_loading2() -> None:
+        try:
+            # this should fail since the descriptor and executor are under different paths
+            # despite the executor being in the same package as p1-tp1 which should load
+>           JobExecutor.get_instance('p2-tp1')
+
+tests/test_executor_loading.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'p2-tp1', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "p2-tp1". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+
+During handling of the above exception, another exception occurred:
+
+    def test_cross_path_loading2() -> None:
+        try:
+            # this should fail since the descriptor and executor are under different paths
+            # despite the executor being in the same package as p1-tp1 which should load
+            JobExecutor.get_instance('p2-tp1')
+            assert False
+        except ValueError as ve:
+>           assert 'Unable to load executor' in str(ve)
+E           assert 'Unable to load executor' in 'No such executor "p2-tp1". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm'
+E            +  where 'No such executor "p2-tp1". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm' = str(ValueError('No such executor "p2-tp1". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm'))
+
+tests/test_executor_loading.py:26: AssertionError
+___________________________ test_cross_path_loading3 ___________________________
+
+    def test_cross_path_loading3() -> None:
+        try:
+            # this should fail since the descriptor and executor are under different paths
+>           JobExecutor.get_instance('p2-tp3')
+
+tests/test_executor_loading.py:32: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'p2-tp3', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "p2-tp3". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+
+During handling of the above exception, another exception occurred:
+
+    def test_cross_path_loading3() -> None:
+        try:
+            # this should fail since the descriptor and executor are under different paths
+            JobExecutor.get_instance('p2-tp3')
+            assert False
+        except ValueError as ve:
+>           assert 'Unable to load executor' in str(ve)
+E           assert 'Unable to load executor' in 'No such executor "p2-tp3". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm'
+E            +  where 'No such executor "p2-tp3". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm' = str(ValueError('No such executor "p2-tp3". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm'))
+
+tests/test_executor_loading.py:35: AssertionError
+______________________ test_issue_435[batch-test:single] _______________________
+
+execparams = batch-test:single
+
+    def test_issue_435(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/date', launcher=execparams.launcher,
+                          attributes=JobAttributes(duration=timedelta(seconds=3700.5))))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_issue_435.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:02:06 DEBUG New Job: Job[id=171b58ab-e3f9-49f2-a836-89f4e6028413, native_id=None, executor=None, status=JobStatus[NEW, time=1752620526.1437502]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=171b58ab-e3f9-49f2-a836-89f4e6028413, native_id=None, executor=None, status=JobStatus[NEW, time=1752620526.1437502]]
+_____________________ test_issue_435[batch-test:multiple] ______________________
+
+execparams = batch-test:multiple
+
+    def test_issue_435(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/date', launcher=execparams.launcher,
+                          attributes=JobAttributes(duration=timedelta(seconds=3700.5))))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_issue_435.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:02:06 DEBUG New Job: Job[id=d558b082-ac1e-4f74-9151-ec61b568d7ba, native_id=None, executor=None, status=JobStatus[NEW, time=1752620526.1555724]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=d558b082-ac1e-4f74-9151-ec61b568d7ba, native_id=None, executor=None, status=JobStatus[NEW, time=1752620526.1555724]]
+____________________ test_issue_435[batch-test:batch-test] _____________________
+
+execparams = batch-test:batch-test
+
+    def test_issue_435(execparams: ExecutorTestParams) -> None:
+        job = Job(JobSpec(executable='/bin/date', launcher=execparams.launcher,
+                          attributes=JobAttributes(duration=timedelta(seconds=3700.5))))
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_issue_435.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:02:06 DEBUG New Job: Job[id=c3b9c600-85a4-4aa0-bf73-b56cac131ef6, native_id=None, executor=None, status=JobStatus[NEW, time=1752620526.1669824]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=c3b9c600-85a4-4aa0-bf73-b56cac131ef6, native_id=None, executor=None, status=JobStatus[NEW, time=1752620526.1669824]]
+______________________ test_nodefile[batch-test:multiple] ______________________
+
+execparams = batch-test:multiple
+
+    def test_nodefile(execparams: ExecutorTestParams) -> None:
+        if execparams.executor in NOT_TESTED:
+            pytest.skip('This test does not work with %s' % execparams.executor)
+        if execparams.launcher == 'single':
+            pytest.skip('This test does not work with the single launcher')
+    
+        my_path = os.path.dirname(os.path.realpath(__file__))
+    
+        N_PROC = 4
+        with TemporaryDirectory(dir=Path.home() / '.psij' / 'test') as td:
+            outp = Path(td, 'stdout.txt')
+            with _deploy(os.path.join(my_path, 'test_nodefile.sh')) as excp:
+                spec = JobSpec('/bin/bash', [str(excp), str(N_PROC)],
+                               stdout_path=outp)
+                job = Job(spec)
+                spec.resources = ResourceSpecV1(process_count=N_PROC)
+>               ex = _get_executor_instance(execparams, job)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_nodefile.py:30: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:02:06 DEBUG New Job: Job[id=b7d5af5c-4313-4c28-a6ee-278610bbbf14, native_id=None, executor=None, status=JobStatus[NEW, time=1752620526.205657]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=b7d5af5c-4313-4c28-a6ee-278610bbbf14, native_id=None, executor=None, status=JobStatus[NEW, time=1752620526.205657]]
+_____________________ test_nodefile[batch-test:batch-test] _____________________
+
+execparams = batch-test:batch-test
+
+    def test_nodefile(execparams: ExecutorTestParams) -> None:
+        if execparams.executor in NOT_TESTED:
+            pytest.skip('This test does not work with %s' % execparams.executor)
+        if execparams.launcher == 'single':
+            pytest.skip('This test does not work with the single launcher')
+    
+        my_path = os.path.dirname(os.path.realpath(__file__))
+    
+        N_PROC = 4
+        with TemporaryDirectory(dir=Path.home() / '.psij' / 'test') as td:
+            outp = Path(td, 'stdout.txt')
+            with _deploy(os.path.join(my_path, 'test_nodefile.sh')) as excp:
+                spec = JobSpec('/bin/bash', [str(excp), str(N_PROC)],
+                               stdout_path=outp)
+                job = Job(spec)
+                spec.resources = ResourceSpecV1(process_count=N_PROC)
+>               ex = _get_executor_instance(execparams, job)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_nodefile.py:30: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:02:06 DEBUG New Job: Job[id=4b83c5d9-8aaa-45a5-af19-0db3b919b8a0, native_id=None, executor=None, status=JobStatus[NEW, time=1752620526.2208307]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=4b83c5d9-8aaa-45a5-af19-0db3b919b8a0, native_id=None, executor=None, status=JobStatus[NEW, time=1752620526.2208307]]
+______________________ test_nodes[batch-test:batch-test] _______________________
+
+execparams = batch-test:batch-test
+
+    def test_nodes(execparams: ExecutorTestParams) -> None:
+        if not _supported(execparams):
+            pytest.skip('Unsupported executor/launcher combination')
+    
+        _make_test_dir()
+    
+        n_ranks = 4
+        n_nodes = 2
+        ppn = n_ranks // n_nodes
+    
+        with TemporaryDirectory(dir=Path.home() / '.psij' / 'test') as td:
+            outp = Path(td, 'stdout.txt')
+            job = Job(JobSpec(executable='/bin/hostname', stdout_path=outp,
+                              launcher=execparams.launcher))
+            assert job.spec is not None
+            job.spec.resources = ResourceSpecV1(node_count=n_nodes, processes_per_node=ppn)
+>           ex = _get_executor_instance(execparams, job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_resources.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:02:06 DEBUG New Job: Job[id=4a38c72e-6804-4ad0-81e5-09c2b1f54717, native_id=None, executor=None, status=JobStatus[NEW, time=1752620526.2402258]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=4a38c72e-6804-4ad0-81e5-09c2b1f54717, native_id=None, executor=None, status=JobStatus[NEW, time=1752620526.2402258]]
+_______________ test_user_guide_resourcespec[batch-test:single] ________________
+
+execparams = batch-test:single
+
+    def test_user_guide_resourcespec(execparams: ExecutorTestParams) -> None:
+        job = Job(
+            JobSpec(
+                executable='/bin/date',
+                resources=ResourceSpecV1(
+                    node_count=2,
+                    processes_per_node=4
+                )
+            )
+        )
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/user_guide/test_resourcespec.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:02:12 DEBUG New Job: Job[id=791011d2-15ee-4495-83ec-096a199f1fc0, native_id=None, executor=None, status=JobStatus[NEW, time=1752620532.1373727]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=791011d2-15ee-4495-83ec-096a199f1fc0, native_id=None, executor=None, status=JobStatus[NEW, time=1752620532.1373727]]
+______________ test_user_guide_resourcespec[batch-test:multiple] _______________
+
+execparams = batch-test:multiple
+
+    def test_user_guide_resourcespec(execparams: ExecutorTestParams) -> None:
+        job = Job(
+            JobSpec(
+                executable='/bin/date',
+                resources=ResourceSpecV1(
+                    node_count=2,
+                    processes_per_node=4
+                )
+            )
+        )
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/user_guide/test_resourcespec.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:02:12 DEBUG New Job: Job[id=8337173b-18db-41e5-b900-0e2deb6e1870, native_id=None, executor=None, status=JobStatus[NEW, time=1752620532.1738687]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=8337173b-18db-41e5-b900-0e2deb6e1870, native_id=None, executor=None, status=JobStatus[NEW, time=1752620532.1738687]]
+_____________ test_user_guide_resourcespec[batch-test:batch-test] ______________
+
+execparams = batch-test:batch-test
+
+    def test_user_guide_resourcespec(execparams: ExecutorTestParams) -> None:
+        job = Job(
+            JobSpec(
+                executable='/bin/date',
+                resources=ResourceSpecV1(
+                    node_count=2,
+                    processes_per_node=4
+                )
+            )
+        )
+>       ex = _get_executor_instance(execparams, job)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/user_guide/test_resourcespec.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:02:12 DEBUG New Job: Job[id=12c3893a-bbd2-4ec1-9cc1-af5978f1333c, native_id=None, executor=None, status=JobStatus[NEW, time=1752620532.1932971]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=12c3893a-bbd2-4ec1-9cc1-af5978f1333c, native_id=None, executor=None, status=JobStatus[NEW, time=1752620532.1932971]]
+______________ test_user_guide_scheduling_info[batch-test:single] ______________
+
+execparams = batch-test:single
+
+    def test_user_guide_scheduling_info(execparams: ExecutorTestParams) -> None:
+    
+        job = Job(
+            JobSpec(
+                executable="/bin/date",
+                attributes=JobAttributes(
+                    queue_name=execparams.queue_name,
+                    account=execparams.account
+                )
+            )
+        )
+    
+>       executor = _get_executor_instance(execparams, job)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/user_guide/test_scheduling_information.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:02:12 DEBUG New Job: Job[id=c47ccdda-c97e-40ce-8ae6-9f3ce3d55f41, native_id=None, executor=None, status=JobStatus[NEW, time=1752620532.2340186]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=c47ccdda-c97e-40ce-8ae6-9f3ce3d55f41, native_id=None, executor=None, status=JobStatus[NEW, time=1752620532.2340186]]
+_____________ test_user_guide_scheduling_info[batch-test:multiple] _____________
+
+execparams = batch-test:multiple
+
+    def test_user_guide_scheduling_info(execparams: ExecutorTestParams) -> None:
+    
+        job = Job(
+            JobSpec(
+                executable="/bin/date",
+                attributes=JobAttributes(
+                    queue_name=execparams.queue_name,
+                    account=execparams.account
+                )
+            )
+        )
+    
+>       executor = _get_executor_instance(execparams, job)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/user_guide/test_scheduling_information.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:02:12 DEBUG New Job: Job[id=50ad66dd-9c13-408e-b51f-985797001607, native_id=None, executor=None, status=JobStatus[NEW, time=1752620532.2478666]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=50ad66dd-9c13-408e-b51f-985797001607, native_id=None, executor=None, status=JobStatus[NEW, time=1752620532.2478666]]
+____________ test_user_guide_scheduling_info[batch-test:batch-test] ____________
+
+execparams = batch-test:batch-test
+
+    def test_user_guide_scheduling_info(execparams: ExecutorTestParams) -> None:
+    
+        job = Job(
+            JobSpec(
+                executable="/bin/date",
+                attributes=JobAttributes(
+                    queue_name=execparams.queue_name,
+                    account=execparams.account
+                )
+            )
+        )
+    
+>       executor = _get_executor_instance(execparams, job)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/user_guide/test_scheduling_information.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/_test_tools.py:69: in _get_executor_instance
+    return JobExecutor.get_instance(ep.executor, url=ep.url)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/psij/job_executor.py:238: in get_instance
+    selected = _get_plugin_class(name, version_constraint, 'executor', JobExecutor._executors)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'batch-test', version_constraint = None, type = 'executor'
+store = {'cobalt': [<psij.descriptor._VersionEntry object at 0x7764d892a4b0>], 'flux': [<psij.descriptor._VersionEntry object ...iptor._VersionEntry object at 0x7764d881e3f0>], 'lsf': [<psij.descriptor._VersionEntry object at 0x7764d881fbf0>], ...}
+
+    def _get_plugin_class(name: str, version_constraint: Optional[str], type: str,
+                          store: Dict[str, List[_VersionEntry[T]]]) -> _VersionEntry[T]:
+        name = name.lower()
+        if name not in store:
+>           raise ValueError('No such {} "{}". Available {}s: {}'.format(type, name, type,
+                                                                         _get_names(store)))
+E           ValueError: No such executor "batch-test". Available executors: cobalt, local, flux, lsf, pbs, pbs_classic, rp, slurm
+
+src/psij/_plugins.py:114: ValueError
+----------------------------- Captured stderr call -----------------------------
+2025-07-15 23:02:12 DEBUG New Job: Job[id=86ded70a-dd13-4039-9501-c6f5bbcdd4ea, native_id=None, executor=None, status=JobStatus[NEW, time=1752620532.2607234]]
+------------------------------ Captured log call -------------------------------
+DEBUG    psij.job:job.py:51 New Job: Job[id=86ded70a-dd13-4039-9501-c6f5bbcdd4ea, native_id=None, executor=None, status=JobStatus[NEW, time=1752620532.2607234]]
+=============================== warnings summary ===============================
+../../../../opt/conda/envs/psij/lib/python3.12/site-packages/radical/utils/atfork/stdlib_fixer.py:61
+  /opt/conda/envs/psij/lib/python3.12/site-packages/radical/utils/atfork/stdlib_fixer.py:61: UserWarning: Import `radical` modules before `logging` to avoid the application to deadlock on `fork()`!
+    warnings.warn(msg)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/getting_started/test_simple_example.py::test_getting_started_single_job[batch-test:single]
+FAILED tests/getting_started/test_simple_example.py::test_getting_started_single_job[batch-test:multiple]
+FAILED tests/getting_started/test_simple_example.py::test_getting_started_single_job[batch-test:batch-test]
+FAILED tests/test_executor.py::test_simple_job[batch-test:single] - ValueErro...
+FAILED tests/test_executor.py::test_simple_job[batch-test:multiple] - ValueEr...
+FAILED tests/test_executor.py::test_simple_job[batch-test:batch-test] - Value...
+FAILED tests/test_executor.py::test_simple_job_redirect[batch-test:single] - ...
+FAILED tests/test_executor.py::test_simple_job_redirect[batch-test:multiple]
+FAILED tests/test_executor.py::test_simple_job_redirect[batch-test:batch-test]
+FAILED tests/test_executor.py::test_stderr_redirect[batch-test:single] - Valu...
+FAILED tests/test_executor.py::test_stderr_redirect[batch-test:multiple] - Va...
+FAILED tests/test_executor.py::test_stderr_redirect[batch-test:batch-test] - ...
+FAILED tests/test_executor.py::test_attach[batch-test:single] - ValueError: N...
+FAILED tests/test_executor.py::test_attach[batch-test:multiple] - ValueError:...
+FAILED tests/test_executor.py::test_attach[batch-test:batch-test] - ValueErro...
+FAILED tests/test_executor.py::test_attach2[batch-test:single] - ValueError: ...
+FAILED tests/test_executor.py::test_attach2[batch-test:multiple] - ValueError...
+FAILED tests/test_executor.py::test_attach2[batch-test:batch-test] - ValueErr...
+FAILED tests/test_executor.py::test_cancel[batch-test:single] - ValueError: N...
+FAILED tests/test_executor.py::test_cancel[batch-test:multiple] - ValueError:...
+FAILED tests/test_executor.py::test_cancel[batch-test:batch-test] - ValueErro...
+FAILED tests/test_executor.py::test_failing_job[batch-test:single] - ValueErr...
+FAILED tests/test_executor.py::test_failing_job[batch-test:multiple] - ValueE...
+FAILED tests/test_executor.py::test_failing_job[batch-test:batch-test] - Valu...
+FAILED tests/test_executor.py::test_missing_executable[batch-test:single] - V...
+FAILED tests/test_executor.py::test_missing_executable[batch-test:multiple]
+FAILED tests/test_executor.py::test_missing_executable[batch-test:batch-test]
+FAILED tests/test_executor.py::test_parallel_jobs[batch-test:single] - ValueE...
+FAILED tests/test_executor.py::test_parallel_jobs[batch-test:multiple] - Valu...
+FAILED tests/test_executor.py::test_parallel_jobs[batch-test:batch-test] - Va...
+FAILED tests/test_executor.py::test_env_var[batch-test:single] - ValueError: ...
+FAILED tests/test_executor.py::test_env_var[batch-test:multiple] - ValueError...
+FAILED tests/test_executor.py::test_env_var[batch-test:batch-test] - ValueErr...
+FAILED tests/test_executor.py::test_stdin_redirect[batch-test:single] - Value...
+FAILED tests/test_executor.py::test_stdin_redirect[batch-test:multiple] - Val...
+FAILED tests/test_executor.py::test_stdin_redirect[batch-test:batch-test] - V...
+FAILED tests/test_executor.py::test_list[batch-test:single] - ValueError: No ...
+FAILED tests/test_executor.py::test_list[batch-test:multiple] - ValueError: N...
+FAILED tests/test_executor.py::test_list[batch-test:batch-test] - ValueError:...
+FAILED tests/test_executor_loading.py::test_executor_loading - ValueError: No...
+FAILED tests/test_executor_loading.py::test_cross_path_loading1 - ValueError:...
+FAILED tests/test_executor_loading.py::test_cross_path_loading2 - assert 'Una...
+FAILED tests/test_executor_loading.py::test_cross_path_loading3 - assert 'Una...
+FAILED tests/test_issue_435.py::test_issue_435[batch-test:single] - ValueErro...
+FAILED tests/test_issue_435.py::test_issue_435[batch-test:multiple] - ValueEr...
+FAILED tests/test_issue_435.py::test_issue_435[batch-test:batch-test] - Value...
+FAILED tests/test_nodefile.py::test_nodefile[batch-test:multiple] - ValueErro...
+FAILED tests/test_nodefile.py::test_nodefile[batch-test:batch-test] - ValueEr...
+FAILED tests/test_resources.py::test_nodes[batch-test:batch-test] - ValueErro...
+FAILED tests/user_guide/test_resourcespec.py::test_user_guide_resourcespec[batch-test:single]
+FAILED tests/user_guide/test_resourcespec.py::test_user_guide_resourcespec[batch-test:multiple]
+FAILED tests/user_guide/test_resourcespec.py::test_user_guide_resourcespec[batch-test:batch-test]
+FAILED tests/user_guide/test_scheduling_information.py::test_user_guide_scheduling_info[batch-test:single]
+FAILED tests/user_guide/test_scheduling_information.py::test_user_guide_scheduling_info[batch-test:multiple]
+FAILED tests/user_guide/test_scheduling_information.py::test_user_guide_scheduling_info[batch-test:batch-test]
+============ 55 failed, 66 passed, 11 skipped, 1 warning in 30.31s =============
